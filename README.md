@@ -4,7 +4,7 @@
 
 Visual Studio Code + PlatformIO, Visual Studio
 
-## This repo contains examples containing the following functionality:
+## This repo contains examples demonstrating the following functionality:
 
 ### Sound data collection (With Arduino Nano Ble Sense 33)
 
