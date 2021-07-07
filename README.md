@@ -1,6 +1,6 @@
 # JHU-PSI-Extension
 
-## Tools/libraries used and recommended
+## Tools/libraries used/recommended
 
 Visual Studio Code + PlatformIO, Visual Studio, Conda
 
