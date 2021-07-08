@@ -8,7 +8,7 @@ Visual Studio Code + PlatformIO, Visual Studio, Conda
 
 ### Image data collection from RealSense
 
-This example uses to code from the [Azure Kinect][https://github.com/microsoft/psi-samples/tree/main/Samples/AzureKinectSample] sample, but uses the RealSense component instead. Be careful to follow the directions for RealSense install/support.
+This example uses to code from the [Azure Kinect](https://github.com/microsoft/psi-samples/tree/main/Samples/AzureKinectSample) sample, but uses the RealSense component instead. Be careful to follow the directions for RealSense install/support.
 
 
 ### Sound data collection (With Arduino Nano Ble Sense 33)
