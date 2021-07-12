@@ -67,5 +67,5 @@ for index, data in enumerate(data_array):
     payload[u"originatingTime"] = datetime.now().timestamp()
     sleep(1)
     # copied from Psi docs/examples
-    output.send_multipart(["faces".encode(), msgpack.dumps(payload)])
+    output.send_multipart(["sound".encode(), msgpack.dumps(payload)])
     
