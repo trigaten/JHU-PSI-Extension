@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Psi.Interop</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Psi.Interop.Format.CsvFormat">
+            <summary>
+            Format serializer/deserializer for CSV.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Psi.Interop.Format.CsvFormat.Instance">
+            <summary>
+            Gets singleton instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.CsvFormat.SerializeMessage(System.Object,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.CsvFormat.DeserializeMessage(System.Byte[],System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.CsvFormat.PersistHeader(System.Object,System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.CsvFormat.PersistRecord(System.Object,System.DateTime,System.Boolean,System.IO.Stream,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.CsvFormat.PersistFooter(System.IO.Stream,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.CsvFormat.DeserializeRecords(System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Format.JsonFormat">
+            <summary>
+            Format serializer/deserializer for JSON.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Psi.Interop.Format.JsonFormat.Instance">
+            <summary>
+            Gets singleton instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.JsonFormat.SerializeMessage(System.Object,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.JsonFormat.DeserializeMessage(System.Byte[],System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.JsonFormat.PersistHeader(System.Object,System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.JsonFormat.PersistRecord(System.Object,System.DateTime,System.Boolean,System.IO.Stream,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.JsonFormat.PersistFooter(System.IO.Stream,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.JsonFormat.DeserializeRecords(System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Format.MessagePackFormat">
+            <summary>
+            Format serializer/deserializer for MessagePack.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Psi.Interop.Format.MessagePackFormat.Instance">
+            <summary>
+            Gets singleton instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.MessagePackFormat.SerializeMessage(System.Object,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.MessagePackFormat.DeserializeMessage(System.Byte[],System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.MessagePackFormat.PersistHeader(System.Object,System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.MessagePackFormat.PersistRecord(System.Object,System.DateTime,System.Boolean,System.IO.Stream,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.MessagePackFormat.PersistFooter(System.IO.Stream,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Format.MessagePackFormat.DeserializeRecords(System.IO.Stream)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Serialization.IFormatDeserializer">
+            <summary>
+            Format deserializer interface.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Serialization.IFormatDeserializer.DeserializeMessage(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Deserialize single message and originating time stamp payload.
+            </summary>
+            <param name="payload">Payload bytes.</param>
+            <param name="index">Starting index of message data.</param>
+            <param name="count">Number of bytes constituting message data.</param>
+            <returns>Dynamic of primitive or IEnumerable/ExpandoObject of primitive as well as originating time stamp.</returns>
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Serialization.IFormatSerializer">
+            <summary>
+            Format serializer interface.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Serialization.IFormatSerializer.SerializeMessage(System.Object,System.DateTime)">
+            <summary>
+            Serialize single message with originating time stamp.
+            </summary>
+            <param name="message">Message of any type.</param>
+            <param name="originatingTime">Originating time of message.</param>
+            <returns>Serialized bytes, index and count.</returns>
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Serialization.IPersistentFormatDeserializer">
+            <summary>
+            Persistent format deserializer interface.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Serialization.IPersistentFormatDeserializer.DeserializeRecords(System.IO.Stream)">
+            <summary>
+            Deserialize stream of messages and originating time stamps.
+            </summary>
+            <param name="stream">Stream of serialized message data.</param>
+            <returns>Sequence of dynamic of primitive or IEnumerable/ExpandoObject of primitive as well as originating time stamp.</returns>
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Serialization.IPersistentFormatSerializer">
+            <summary>
+            Persistent format serializer interface.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Serialization.IPersistentFormatSerializer.PersistHeader(System.Object,System.IO.Stream)">
+            <summary>
+            Persist header data (if any).
+            </summary>
+            <remarks>This is called once at the start of each persisted partition/file.</remarks>
+            <param name="message">Message of any type.</param>
+            <param name="stream">Stream of serialized bytes along with delimiter or length-prefix.</param>
+            <returns>State object of any type; handed back on calls below, simplifying stateless implementation.</returns>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Serialization.IPersistentFormatSerializer.PersistRecord(System.Object,System.DateTime,System.Boolean,System.IO.Stream,System.Object)">
+            <summary>
+            Persist single serialized message with originating time stamp.
+            </summary>
+            <remarks>This is called once per message.</remarks>
+            <param name="message">Message of any type.</param>
+            <param name="originatingTime">Originating time of message.</param>
+            <param name="first">Flag indicating whether this is the first record; useful for delimiters in some formats.</param>
+            <param name="stream">Stream of serialized bytes along with delimiter or length-prefix.</param>
+            <param name="state">State object of any type; previously returned by header call above.</param>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Serialization.IPersistentFormatSerializer.PersistFooter(System.IO.Stream,System.Object)">
+            <summary>
+            Persist footer data (if any).
+            </summary>
+            <remarks>This is called once upon termination of data stream.</remarks>
+            <param name="stream">Stream of serialized bytes along with delimiter or length-prefix.</param>
+            <param name="state">State object of any type; previously returned by header call above.</param>
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Transport.FileSource`1">
+            <summary>
+            Persisted file source component.
+            </summary>
+            <typeparam name="T">Message type.</typeparam>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.FileSource`1.#ctor(Microsoft.Psi.Pipeline,System.String,Microsoft.Psi.Interop.Serialization.IPersistentFormatDeserializer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Psi.Interop.Transport.FileSource`1"/> class.
+            </summary>
+            <param name="pipeline">Pipeline to which this component belongs.</param>
+            <param name="filename">File name to which to persist.</param>
+            <param name="deserializer">Format serializer with which messages are deserialized.</param>
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Transport.FileWriter`1">
+            <summary>
+            File persistence component.
+            </summary>
+            <typeparam name="T">Message type.</typeparam>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.FileWriter`1.#ctor(Microsoft.Psi.Pipeline,System.String,Microsoft.Psi.Interop.Serialization.IPersistentFormatSerializer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Psi.Interop.Transport.FileWriter`1"/> class.
+            </summary>
+            <param name="pipeline">Pipeline to which this component belongs.</param>
+            <param name="filename">File name to which to persist.</param>
+            <param name="serializer">Format serializer with which messages are serialized.</param>
+        </member>
+        <member name="P:Microsoft.Psi.Interop.Transport.FileWriter`1.In">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.FileWriter`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Transport.NetMQSource`1">
+            <summary>
+            NetMQ (ZeroMQ) subscriber component.
+            </summary>
+            <typeparam name="T">Message type.</typeparam>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQSource`1.#ctor(Microsoft.Psi.Pipeline,System.String,System.String,Microsoft.Psi.Interop.Serialization.IFormatDeserializer,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Psi.Interop.Transport.NetMQSource`1"/> class.
+            </summary>
+            <param name="pipeline">Pipeline to which this component belongs.</param>
+            <param name="topic">Topic name.</param>
+            <param name="address">Connection string.</param>
+            <param name="deserializer">Format deserializer with which messages are deserialized.</param>
+            <param name="useReceivedTimes">Flag indicating whether or not to post with originating times received over the socket. If false, we ignore them and instead use pipeline's current time.</param>
+        </member>
+        <member name="P:Microsoft.Psi.Interop.Transport.NetMQSource`1.Out">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQSource`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQSource`1.Start(System.Action{System.DateTime})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQSource`1.Stop(System.DateTime,System.Action)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Transport.NetMQWriter">
+            <summary>
+            NetMQ (ZeroMQ) publisher component.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQWriter.#ctor(Microsoft.Psi.Pipeline,System.String,Microsoft.Psi.Interop.Serialization.IFormatSerializer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Psi.Interop.Transport.NetMQWriter"/> class.
+            </summary>
+            <param name="pipeline">Pipeline to which this component belongs.</param>
+            <param name="address">Connection string.</param>
+            <param name="serializer">Format serializer with which messages are serialized.</param>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQWriter.AddTopic``1(System.String)">
+            <summary>
+            Add topic receiver.
+            </summary>
+            <param name="topic">Topic name.</param>
+            <typeparam name="T">Message type.</typeparam>
+            <returns>Receiver to which to pipe messages.</returns>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQWriter.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Psi.Interop.Transport.NetMQWriter`1">
+            <summary>
+            NetMQ (ZeroMQ) publisher component.
+            </summary>
+            <typeparam name="T">Message type.</typeparam>
+        </member>
+        <member name="M:Microsoft.Psi.Interop.Transport.NetMQWriter`1.#ctor(Microsoft.Psi.Pipeline,System.String,System.String,Microsoft.Psi.Interop.Serialization.IFormatSerializer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Psi.Interop.Transport.NetMQWriter`1"/> class.
+            </summary>
+            <param name="pipeline">Pipeline to which this component belongs.</param>
+            <param name="topic">Topic name.</param>
+            <param name="address">Connection string.</param>
+            <param name="serializer">Format serializer with which messages are serialized.</param>
+        </member>
+        <member name="P:Microsoft.Psi.Interop.Transport.NetMQWriter`1.In">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

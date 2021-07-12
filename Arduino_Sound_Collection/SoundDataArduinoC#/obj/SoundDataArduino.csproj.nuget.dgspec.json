@@ -1,0 +1,664 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\psi\\source\\repos\\psi3\\TempDataArduino\\SoundDataArduino.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio.Windows\\Microsoft.Psi.Audio.Windows.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio.Windows\\Microsoft.Psi.Audio.Windows.csproj",
+        "projectName": "Microsoft.Psi.Audio.Windows",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio.Windows\\Microsoft.Psi.Audio.Windows.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio.Windows\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\Microsoft.Psi.Audio.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\Microsoft.Psi.Audio.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\Microsoft.Psi.Audio.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\Microsoft.Psi.Audio.csproj",
+        "projectName": "Microsoft.Psi.Audio",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\Microsoft.Psi.Audio.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Data\\Microsoft.Psi.Data\\Microsoft.Psi.Data.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Data\\Microsoft.Psi.Data\\Microsoft.Psi.Data.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Data\\Microsoft.Psi.Data\\Microsoft.Psi.Data.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Data\\Microsoft.Psi.Data\\Microsoft.Psi.Data.csproj",
+        "projectName": "Microsoft.Psi.Data",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Data\\Microsoft.Psi.Data\\Microsoft.Psi.Data.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Data\\Microsoft.Psi.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\Microsoft.Psi.Imaging.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\Microsoft.Psi.Imaging.csproj",
+        "projectName": "Microsoft.Psi.Imaging",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\Microsoft.Psi.Imaging.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Native.x64\\Microsoft.Psi.Media.Native.x64.vcxproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Native.x64\\Microsoft.Psi.Media.Native.x64.vcxproj",
+        "projectName": "Microsoft.Psi.Media.Native.x64",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Native.x64\\Microsoft.Psi.Media.Native.x64.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Windows.x64\\Microsoft.Psi.Media.Windows.x64.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Windows.x64\\Microsoft.Psi.Media.Windows.x64.csproj",
+        "projectName": "Microsoft.Psi.Media.Windows.x64",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Windows.x64\\Microsoft.Psi.Media.Windows.x64.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Windows.x64\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio.Windows\\Microsoft.Psi.Audio.Windows.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio.Windows\\Microsoft.Psi.Audio.Windows.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\Microsoft.Psi.Audio.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Audio\\Microsoft.Psi.Audio\\Microsoft.Psi.Audio.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\Microsoft.Psi.Imaging.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\Microsoft.Psi.Imaging.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media_Interop.Windows.x64\\Microsoft.Psi.Media_Interop.Windows.x64.vcxproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media_Interop.Windows.x64\\Microsoft.Psi.Media_Interop.Windows.x64.vcxproj",
+                "privateAssets": "all"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "SharpDX.MediaFoundation": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media_Interop.Windows.x64\\Microsoft.Psi.Media_Interop.Windows.x64.vcxproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media_Interop.Windows.x64\\Microsoft.Psi.Media_Interop.Windows.x64.vcxproj",
+        "projectName": "Microsoft.Psi.Media_Interop.Windows.x64",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media_Interop.Windows.x64\\Microsoft.Psi.Media_Interop.Windows.x64.vcxproj",
+        "frameworks": {
+          "native": {
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Native.x64\\Microsoft.Psi.Media.Native.x64.vcxproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Native.x64\\Microsoft.Psi.Media.Native.x64.vcxproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi.Interop\\Microsoft.Psi.Interop.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi.Interop\\Microsoft.Psi.Interop.csproj",
+        "projectName": "Microsoft.Psi.Interop",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi.Interop\\Microsoft.Psi.Interop.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi.Interop\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.0, )"
+            },
+            "MessagePack": {
+              "target": "Package",
+              "version": "[2.1.90, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NetMQ": {
+              "target": "Package",
+              "version": "[4.0.0.207, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "System.Net.Security": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            },
+            "System.Net.WebSockets.Client": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj",
+        "projectName": "Microsoft.Psi.Runtime",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "System.Numerics.Vectors": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Reflection.Emit.ILGeneration": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Reflection.Emit.Lightweight": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\psi\\source\\repos\\psi3\\TempDataArduino\\SoundDataArduino.csproj": {
+      "version": "0.15.49.1-beta",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\psi\\source\\repos\\psi3\\TempDataArduino\\SoundDataArduino.csproj",
+        "projectName": "SoundDataArduino",
+        "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\TempDataArduino\\SoundDataArduino.csproj",
+        "packagesPath": "C:\\Users\\psi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\psi\\source\\repos\\psi3\\TempDataArduino\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\psi\\source\\repos\\psi3\\NuGet.Config",
+          "C:\\Users\\psi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\Microsoft.Psi.Imaging.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Imaging\\Microsoft.Psi.Imaging\\Microsoft.Psi.Imaging.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Windows.x64\\Microsoft.Psi.Media.Windows.x64.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Media\\Microsoft.Psi.Media.Windows.x64\\Microsoft.Psi.Media.Windows.x64.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi.Interop\\Microsoft.Psi.Interop.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi.Interop\\Microsoft.Psi.Interop.csproj"
+              },
+              "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj": {
+                "projectPath": "C:\\Users\\psi\\source\\repos\\psi3\\Sources\\Runtime\\Microsoft.Psi\\Microsoft.Psi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
