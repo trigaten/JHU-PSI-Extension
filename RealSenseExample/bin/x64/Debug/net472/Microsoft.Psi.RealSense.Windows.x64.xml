@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Psi.RealSense.Windows.x64</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Psi.RealSense.Windows.RealSenseSensor">
+            <summary>
+            Component that captures and streams video and depth from an Intel RealSense camera.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.RealSense.Windows.RealSenseSensor.#ctor(Microsoft.Psi.Pipeline)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Psi.RealSense.Windows.RealSenseSensor"/> class.
+            </summary>
+            <param name="pipeline">The pipeline to add the component to.</param>
+        </member>
+        <member name="P:Microsoft.Psi.RealSense.Windows.RealSenseSensor.ColorImage">
+            <summary>
+            Gets the emitter that generates RGB images from the RealSense depth camera.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Psi.RealSense.Windows.RealSenseSensor.DepthImage">
+            <summary>
+            Gets the emitter that generates Depth images from the RealSense depth camera.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.RealSense.Windows.RealSenseSensor.Dispose">
+            <summary>
+            Dispose method.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Psi.RealSense.Windows.RealSenseSensor.Start(System.Action{System.DateTime})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Psi.RealSense.Windows.RealSenseSensor.Stop(System.DateTime,System.Action)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
